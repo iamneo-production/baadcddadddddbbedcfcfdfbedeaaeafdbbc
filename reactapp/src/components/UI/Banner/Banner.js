@@ -1,7 +1,9 @@
-const Banner=(props)=>{
+const Banner = ({score}) => {
     return(
-        <p>{props.children}</p>
+    <div>
+    You have answered {score}/5 &nbsp;Correctly
+    </div>
     )
-}
+    }
 
-export default Banner;
+    export default Banner;
