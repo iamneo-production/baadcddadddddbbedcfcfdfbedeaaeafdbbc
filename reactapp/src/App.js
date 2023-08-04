@@ -4,6 +4,7 @@ import Button from './components/UI/Button/Button';
 import Card  from './components/UI/Card/Card';
 import Banner from './components/UI/Banner/Banner';
 import {Route, Routes,Link,BrowserRouter} from 'react-router-dom';
+import Adapter from 'enzyme-adapter-react-16';
 
 //create class component
 class App extends React.Component {

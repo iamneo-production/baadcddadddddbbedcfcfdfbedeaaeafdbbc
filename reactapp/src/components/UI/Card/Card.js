@@ -1,6 +1,7 @@
 import '../../../index.css';
 import Button from '../Button/Button'
 import React from 'react';
+import Adapter from 'enzyme-adapter-react-16';
 
 class Card extends React.Component {
     constructor(props) {
