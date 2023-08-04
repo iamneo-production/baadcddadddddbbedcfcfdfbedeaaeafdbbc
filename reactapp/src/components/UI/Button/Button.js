@@ -1,14 +1,8 @@
-import '../../../index.css';
-import React from 'react';
-
-
-
-const Button = (props)=>{
-    
+const Button = (props) => {
+        const { btnName = props.children,onClick,marked,style } = props;
     return(
-            <button id={props.id} className={props.className} onClick={props.onClick} disabled={props.disabled} hidden={props.hidden} >{props.children}</button>
-        
+    <button onClick={onClick} disabled={marked} className={style} >{btnName}</button>
     )
-}
-
-export default Button;
+    }
+    
+    export default Button;
