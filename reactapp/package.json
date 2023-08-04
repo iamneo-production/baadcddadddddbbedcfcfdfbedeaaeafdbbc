@@ -39,4 +39,7 @@
   "devDependencies": {
     "@wojtekmaj/enzyme-adapter-react-17": "^0.8.0"
   }
+
+  "jest": {
+    "setupTestFrameworkScriptFile": "./test/setupTests.js" }
 }

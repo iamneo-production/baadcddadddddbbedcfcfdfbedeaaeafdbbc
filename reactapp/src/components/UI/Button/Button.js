@@ -1,14 +1,27 @@
-import '../../../index.css';
-import React from 'react';
-import Adapter from 'enzyme-adapter-react-16';
+import React from 'react'
+
+interface ButtonProps {
+    onClick: () => void;
+    text : String;
+}
+
+const ButtonFunc = (text) => {
+    if(text === ""){
+        return "Button Works";
+    } else {
+        return text;
+    }
+}
+
+// const Button: React.FC<ButtonProps> = ({onClick, text}) => {
+//     return <>
+//     <button onClick= {onClick}>{ButtonFunc(text)}</button>
+//     </>;
+// };
 
 
-const Button = (props)=>{
-    
-    return(
-            <button id={props.id} className={props.className} onClick={props.onClick} disabled={props.disabled} hidden={props.hidden} >{props.children}</button>
-        
-    )
+const Button = (ButtonProps) => {
+    return (<button onClick = {ButtonProps.onClick}>{ButtonProps.children}</button>);
 }
 
 export default Button;
